@@ -1,1 +1,0 @@
-import{S as t,i as s,s as e,q as a,d as c,n as d}from"./client.0c3edf19.js";function n(t){return{c(){this.h()},l(t){a('[data-svelte="svelte-d9az65"]',document.head).forEach(c),this.h()},h(){document.title="Skygear Auth"},m:d,p:d,i:d,o:d,d:d}}export default class extends t{constructor(t){super(),s(this,t,null,n,e,{})}}
