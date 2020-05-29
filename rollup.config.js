@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import svelte from "rollup-plugin-svelte";
 import babel from "rollup-plugin-babel";
 import { terser } from "rollup-plugin-terser";
+import { mdsvex } from "mdsvex";
 import sveltePreprocess from "svelte-preprocess";
 import postcssImport from "postcss-import";
 import autoprefixer from "autoprefixer";
@@ -17,7 +18,7 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const preprocess = sveltePreprocess({
   postcss: {
-    plugins: [autoprefixer, postcssFlexbugsFixes, postcssImport],
+    plugins: [mdsvex, autoprefixer, postcssFlexbugsFixes, postcssImport],
   },
 });
 
@@ -40,6 +41,7 @@ export default {
         hydratable: true,
         emitCss: true,
         css: true,
+        extensions: [".svelte", ".svx"],
         preprocess,
       }),
       resolve({
