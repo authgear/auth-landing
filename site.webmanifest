@@ -1,6 +1,6 @@
 {
-  "name": "Skygear Auth",
-  "short_name": "Skygear Auth",
+  "name": "Authgear",
+  "short_name": "Authgear",
   "start_url": "./",
   "icons": [
     {
