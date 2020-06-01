@@ -1,5 +1,5 @@
 <script>
-  export let currPath;
+  export let currPath = "";
 
   const linksReverseMap = {
     terms: "Authgear Terms of Services",
@@ -8,9 +8,9 @@
     policy: "Acceptable Use Policy",
     "data-privacy": "Data Privacy Policy",
     sla: "Service Level Agreement",
-    security: "Security"
+    security: "Security",
   };
-  let currTitle = linksReverseMap[currPath];
+  const currTitle = linksReverseMap[currPath];
 </script>
 
 <style>
