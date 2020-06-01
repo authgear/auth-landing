@@ -1,4 +1,5 @@
 <script>
+  import Button from "./Button.svelte";
   import PricingTableCard from "./PricingTableCard.svelte";
 </script>
 
@@ -31,26 +32,6 @@
     font-size: 15px;
     line-height: 1.4;
     color: #666;
-  }
-
-  .pricing-table__card__btn {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 14px 16px;
-    border: 1px solid transparent;
-    border-radius: 0;
-    transition: background-color 0.25s ease-out, color 0.25s ease-out;
-    font-size: 15px;
-    line-height: 1;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    background-color: #166bef;
-    color: #fff;
-  }
-
-  .pricing-table__card__btn:hover {
-    background-color: #14679e;
   }
 
   @media screen and (min-width: 768px) {
@@ -106,12 +87,11 @@
           title="Enterprise"
           description="Run Authgear for your mission-critical applications"
           features={['Managed SaaS or Private Cloud Deployment', 'Enterprise Grade SLA support', 'Professional Support and Services', 'Anomaly Detection', 'Audited Reports']}>
-          <a
-            slot="footer"
-            class="pricing-table__card__btn"
-            href="mailto:hello@skygear.io">
-            Pricing: Contact Us
-          </a>
+          <div slot="footer">
+            <Button fluid large href="mailto:hello@skygear.io">
+              Pricing: Contact Us
+            </Button>
+          </div>
         </PricingTableCard>
       </div>
     </div>
