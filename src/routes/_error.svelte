@@ -1,5 +1,6 @@
 <script>
   import NotFound from "../components/NotFound.svelte";
+
   export let status;
   export let error;
 
@@ -7,7 +8,7 @@
 </script>
 
 <svelte:head>
-  <title>Authgear - {status}</title>
+  <title>Authgear: {status}</title>
 </svelte:head>
 
 {#if status === 404}

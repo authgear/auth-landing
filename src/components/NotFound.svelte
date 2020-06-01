@@ -36,5 +36,5 @@
   <p class="notfound__message">
     Oops the page you were looking for was not found.
   </p>
-  <Button href=".">Return to homepage</Button>
+  <Button href=".">Return to Homepage</Button>
 </div>
