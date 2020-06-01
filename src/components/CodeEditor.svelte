@@ -1,7 +1,8 @@
 <script>
-  import Prism from "prismjs";
-  import "prismjs/components/prism-kotlin";
-  import "prismjs/components/prism-swift";
+  // import Prism from "prismjs";
+  // import "prismjs/components/prism-kotlin";
+  // import "prismjs/components/prism-swift";
+  // TODO: Fix browser issues with importing PrismJS on IE11/Edge
 
   export let codeTabs = [];
 
@@ -10,22 +11,23 @@
   let showTooltip = false;
 
   function renderCode(language, content) {
-    let langDef;
-    switch (language) {
-      case "javascript":
-        langDef = Prism.languages.javascript;
-        break;
-      case "kotlin":
-        langDef = Prism.languages.kotlin;
-        break;
-      case "swift":
-        langDef = Prism.languages.swift;
-        break;
-      default:
-        langDef = Prism.languages.javascript;
-        break;
-    }
-    return Prism.highlight(content, langDef, language);
+    // let langDef;
+    // switch (language) {
+    //   case "javascript":
+    //     langDef = Prism.languages.javascript;
+    //     break;
+    //   case "kotlin":
+    //     langDef = Prism.languages.kotlin;
+    //     break;
+    //   case "swift":
+    //     langDef = Prism.languages.swift;
+    //     break;
+    //   default:
+    //     langDef = Prism.languages.javascript;
+    //     break;
+    // }
+    // return Prism.highlight(content, langDef, language);
+    return content;
   }
 
   $: codeHtmlOutput = renderCode(currLanguage, currTab.content);
