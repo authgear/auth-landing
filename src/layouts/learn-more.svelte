@@ -33,8 +33,7 @@
   }
 
   .learn-more__toc {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin: 64px 0;
     padding: 0;
     list-style: none;
   }
@@ -59,6 +58,31 @@
     margin-bottom: 48px;
   }
 
+  .learn-more__section-contents {
+    padding: 0;
+  }
+
+  :global(.learn-more__section-contents h5) {
+    font-weight: 600;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    line-height: 1.4;
+    font-size: 17px;
+  }
+
+  :global(.learn-more__section-contents h6) {
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 0;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+
+  :global(.learn-more__section-contents ul, .learn-more__section-contents ol) {
+    margin-bottom: 16px;
+    margin-left: 20px;
+  }
+
   @media screen and (min-width: 768px) {
     .learn-more {
       padding-left: 56px;
@@ -67,6 +91,10 @@
 
     .learn-more__title {
       font-size: 48px;
+    }
+
+    :global(.learn-more__section-contents h5) {
+      font-size: 20px;
     }
   }
 </style>
@@ -86,5 +114,7 @@
     {/each}
   </ul>
   <h2 class="learn-more__section-title">{currTitle}</h2>
-  <slot />
+  <div class="learn-more__section-contents col-md-8 col-12">
+    <slot />
+  </div>
 </div>

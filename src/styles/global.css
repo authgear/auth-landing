@@ -12,8 +12,30 @@ body {
 
 a {
   cursor: pointer;
-  color: #fff;
+  color: #166bef;
   text-decoration: none;
+}
+
+a:hover {
+  color: #75a8f6;
+}
+
+b {
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 button {

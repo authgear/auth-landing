@@ -42,6 +42,10 @@
     line-height: 1.5;
   }
 
+  .footer__email-link {
+    color: #fff;
+  }
+
   @media screen and (min-width: 768px) {
     .container-fluid {
       padding-right: 45px;
@@ -143,7 +147,9 @@
     </div>
     <div class="row copyright-wrapper">
       <div class="col-12 col-md-6">
-        <a href="mailto:hello@skygear.io">hello@skygear.io</a>
+        <a class="footer__email-link" href="mailto:hello@skygear.io">
+          hello@skygear.io
+        </a>
       </div>
       <div class="col-12 col-md-6 copyright">
         <span>© Oursky Ltd. All rights reserved</span>
