@@ -1,5 +1,7 @@
 <script>
   import Nav from "../components/Nav.svelte";
+  import CallToAction from "../components/CallToAction.svelte";
+  import Resources from "../components/Resources.svelte";
   import Footer from "../components/Footer.svelte";
 </script>
 
@@ -12,5 +14,6 @@
 <main>
   <slot />
 </main>
-
+<CallToAction />
+<Resources />
 <Footer />

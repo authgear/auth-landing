@@ -6,7 +6,7 @@
     "dev": "sapper dev",
     "build": "sapper build --legacy",
     "build:dev": "npm run build && npm run start",
-    "export": "sapper export --legacy",
+    "export": "sapper export --legacy --entry 404",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
