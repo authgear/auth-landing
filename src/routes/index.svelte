@@ -13,7 +13,7 @@
 </style>
 
 <svelte:head>
-  <title>Authgear</title>
+  <title>Authgear: Don't Compromise Security, Let us help</title>
 </svelte:head>
 
 <HeroHeader />
