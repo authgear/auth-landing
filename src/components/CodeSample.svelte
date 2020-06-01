@@ -98,7 +98,7 @@
         <div class="code-sample__img-wrapper">
           <img
             class="code-sample__img"
-            src="ui-demo.png"
+            src="img/ui-demo.png"
             alt="UI Demo of Authgear SSO" />
         </div>
       </div>
