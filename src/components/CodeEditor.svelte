@@ -82,7 +82,7 @@
   }
 
   .editor__header__tabs-wrapper {
-    padding: 20px 25px 15px 25px;
+    padding: 20px 25px 5px 25px;
     background-color: #fff;
   }
 
@@ -91,9 +91,14 @@
     font-size: 13px;
     font-weight: 900;
     padding: 5px 4px;
+    margin-bottom: 10px;
     margin-right: 35px;
     cursor: pointer;
     background-color: #fff;
+  }
+
+  .editor__header__tab:last-child {
+    margin-right: 0;
   }
 
   .editor__header__tab--active {
