@@ -1,3 +1,7 @@
+<script>
+  import { linkTitleMap } from "../layouts/learn-more.svelte";
+</script>
+
 <style>
   footer {
     padding-top: 50px;
@@ -87,24 +91,11 @@
           <li>
             <a href=".">Documentation</a>
           </li>
-          <li>
-            <a href=".">Terms of Services</a>
-          </li>
-          <li>
-            <a href=".">Our Promises</a>
-          </li>
-          <li>
-            <a href=".">Acceptable Use Policy</a>
-          </li>
-          <li>
-            <a href=".">Data Privacy Policy</a>
-          </li>
-          <li>
-            <a href=".">Service Level Agreement</a>
-          </li>
-          <li>
-            <a href=".">Security</a>
-          </li>
+          {#each Object.keys(linkTitleMap) as link}
+            <li>
+              <a href={link}>{linkTitleMap[link]}</a>
+            </li>
+          {/each}
         </ul>
       </div>
       <div class="col-12 col-md-2">

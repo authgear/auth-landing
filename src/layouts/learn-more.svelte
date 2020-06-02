@@ -1,5 +1,5 @@
 <script context="module">
-  export const linksMap = {
+  export const linkTitleMap = {
     terms: "Terms of Services",
     promise: "Our Promises",
     policy: "Acceptable Use Policy",
@@ -12,7 +12,7 @@
 <script>
   export let slug = "";
 
-  const currTitle = linksMap[slug];
+  const currTitle = linkTitleMap[slug];
 </script>
 
 <style>
@@ -104,13 +104,13 @@
 <div class="learn-more">
   <h1 class="learn-more__title">Learn More</h1>
   <ul class="learn-more__toc">
-    {#each Object.keys(linksMap) as link}
+    {#each Object.keys(linkTitleMap) as link}
       <li class="learn-more__toc-item">
         <a
           class:learn-more__toc-link--active={link === slug}
           class="learn-more__toc-link"
           href={link}>
-          {linksMap[link]}
+          {linkTitleMap[link]}
         </a>
       </li>
     {/each}
