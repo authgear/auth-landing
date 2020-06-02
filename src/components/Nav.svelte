@@ -2,9 +2,9 @@
   const navLinks = [
     { name: "Features", href: "." },
     { name: "Comparison", href: "." },
-    { name: "Documentation", href: "." },
+    { name: "Documentation", href: "https://docs.skygear.io" },
     { name: "Pricing", href: "pricing" },
-    { name: "Open Sources", href: "." },
+    { name: "Open Sources", href: "https://github.com/authgear" },
   ];
 
   let showMobileMenu = false;
