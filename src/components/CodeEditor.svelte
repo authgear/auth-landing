@@ -124,9 +124,9 @@
     font-size: 14px;
     font-weight: 700;
     position: absolute;
-    top: 48px;
-    z-index: 1;
-    right: 12px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
     background: #717171;
     padding: 12px 18px;
