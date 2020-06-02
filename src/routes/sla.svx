@@ -1,0 +1,42 @@
+---
+layout: learn-more
+slug: sla
+---
+
+We understand that service interruptions hinder productivity and disrupt your operation.  
+We've set a high bar for service uptime because we believe that you should be able to depend on Skygear and run your business worry-free.
+
+##### The Basics
+
+Our paid plan Service Level Agreement (SLA) guarantees a 99.95% monthly uptime, excluding scheduled downtime described below.
+
+Skygear also make our promise to our users:
+
+- You own your code, not us;
+- You own your data, not us;
+- We won't lock you in (your business is our privilege, not our right);
+- We will use commercially reasonable efforts to achieve 100% uptime. If we fall short of our 99.95% uptime guarantee (scheduled downtime excluded), we’ll refund customers on the paid plan 10% the amount your team paid of the month Skygear was down.
+
+##### Scheduled Downtime
+
+Occasionally, we need to perform maintenance to keep Skygear Hosting Service working as smoothly as possible. If scheduled downtime is necessary, we'll give you 48 hours advance notice. In a calendar year, there will not be more than 12 hours of scheduled downtime.
+
+##### Downtime
+
+Downtime means the hosted server of Skygear was unavailable for use excluding the period of scheduled downtime. We use server monitoring software to monitor when Skygear is down. Downtime does not include the period of time when the Skygear Hosting Service is not available as a result of Scheduled Downtime.
+
+##### Service Credit
+
+In a calendar month during which the SLA is not met as defined in the Service Commitment, as confirmed by Skygear in its sole discretion, Skygear will credit a Customer’s account with a non-transferrable Service Credit equal to 10% of the Fees paid by Customer in the applicable calendar month. Service Credit will be issued for future use only and must be requested by Customer. No refunds or cash value will be provided.
+
+##### SLA Exclusions
+
+The SLA does not apply to any:
+
+- features designated beta, early access, free trial, limited preview, or preview,
+- sandbox environment to application signed with a key other than a production key, or
+- Downtime
+  - caused by factors outside of Skygear's reasonable control;
+  - caused by any force majeure event,
+  - that resulted from Customer’s software or hardware or third party software or hardware under Customer’s control, or both;
+  - resulted from abuses or other behaviors that violate the Agreement.

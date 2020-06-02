@@ -1,3 +1,7 @@
+<script>
+  import { pages as learnMorePages } from "../layouts/learn-more.svelte";
+</script>
+
 <style>
   footer {
     padding-top: 50px;
@@ -42,6 +46,10 @@
     line-height: 1.5;
   }
 
+  .footer__email-link {
+    color: #fff;
+  }
+
   @media screen and (min-width: 768px) {
     .container-fluid {
       padding-right: 45px;
@@ -81,32 +89,13 @@
             <a href=".">Blog</a>
           </li>
           <li>
-            <a href=".">Demo Projects</a>
-          </li>
-          <li>
             <a href=".">Documentation</a>
           </li>
-          <li>
-            <a href=".">Tutorials</a>
-          </li>
-          <li>
-            <a href=".">Terms of Services</a>
-          </li>
-          <li>
-            <a href=".">Our Promises</a>
-          </li>
-          <li>
-            <a href=".">Acceptable Use Policy</a>
-          </li>
-          <li>
-            <a href=".">Data Privacy Policy</a>
-          </li>
-          <li>
-            <a href=".">Service Level Agreement</a>
-          </li>
-          <li>
-            <a href=".">Security</a>
-          </li>
+          {#each learnMorePages as page}
+            <li>
+              <a href={page.slug}>{page.title}</a>
+            </li>
+          {/each}
         </ul>
       </div>
       <div class="col-12 col-md-2">
@@ -143,7 +132,9 @@
     </div>
     <div class="row copyright-wrapper">
       <div class="col-12 col-md-6">
-        <a href="mailto:hello@skygear.io">hello@skygear.io</a>
+        <a class="footer__email-link" href="mailto:hello@skygear.io">
+          hello@skygear.io
+        </a>
       </div>
       <div class="col-12 col-md-6 copyright">
         <span>© Oursky Ltd. All rights reserved</span>

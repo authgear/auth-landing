@@ -26,8 +26,6 @@
 
   .pricing-card__description {
     flex-grow: 1;
-    font-size: 15px;
-    line-height: 28px;
     color: #000;
     margin-top: 0;
     margin-bottom: 16px;

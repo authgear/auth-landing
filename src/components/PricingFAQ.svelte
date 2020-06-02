@@ -52,7 +52,6 @@
   }
 
   .faq__item-answer {
-    line-height: 28px;
     margin-top: 10px;
     margin-bottom: 0;
   }
