@@ -1,5 +1,5 @@
 <script>
-  import { linkTitleMap } from "../layouts/learn-more.svelte";
+  import { pages as learnMorePages } from "../layouts/learn-more.svelte";
 </script>
 
 <style>
@@ -91,9 +91,9 @@
           <li>
             <a href=".">Documentation</a>
           </li>
-          {#each Object.keys(linkTitleMap) as link}
+          {#each learnMorePages as page}
             <li>
-              <a href={link}>{linkTitleMap[link]}</a>
+              <a href={page.slug}>{page.title}</a>
             </li>
           {/each}
         </ul>

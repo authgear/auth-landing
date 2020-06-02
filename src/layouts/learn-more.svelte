@@ -1,18 +1,21 @@
 <script context="module">
-  export const linkTitleMap = {
-    terms: "Terms of Services",
-    promise: "Our Promises",
-    policy: "Acceptable Use Policy",
-    "data-privacy": "Data Privacy Policy",
-    sla: "Service Level Agreement",
-    security: "Security",
-  };
+  export const pages = [
+    {
+      slug: "terms",
+      title: "Terms of Services",
+    },
+    { slug: "promise", title: "Our Promises" },
+    { slug: "policy", title: "Acceptable Use Policy" },
+    { slug: "data-privacy", title: "Data Privacy Policy" },
+    { slug: "sla", title: "Service Level Agreement" },
+    { slug: "security", title: "Security" },
+  ];
 </script>
 
 <script>
   export let slug = "";
 
-  const currTitle = linkTitleMap[slug];
+  const currTitle = pages.find((page) => page.slug === slug).title;
 </script>
 
 <style>
@@ -107,13 +110,13 @@
 <div class="learn-more">
   <h1 class="learn-more__title">Learn More</h1>
   <ul class="learn-more__toc">
-    {#each Object.keys(linkTitleMap) as link}
+    {#each pages as page}
       <li class="learn-more__toc-item">
         <a
-          class:learn-more__toc-link--active={link === slug}
+          class:learn-more__toc-link--active={page.slug === slug}
           class="learn-more__toc-link"
-          href={link}>
-          {linkTitleMap[link]}
+          href={page.slug}>
+          {page.title}
         </a>
       </li>
     {/each}
