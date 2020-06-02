@@ -1,6 +1,6 @@
 ---
 layout: learn-more
-currPath: security
+slug: security
 ---
 
 <p>We employ the following security controls at layer from physical to application level to ensure our customers can focus on their apps without worrying about infrastructure.

@@ -1,6 +1,6 @@
 ---
 layout: learn-more
-currPath: terms
+slug: terms
 ---
 
 <h5>1. Your Agreement with Skygear</h5>

@@ -1,6 +1,6 @@
 ---
 layout: learn-more
-currPath: sla
+slug: sla
 ---
 
 <p>We understand that service interruptions hinder productivity and disrupt your operation. <br>We've set a high bar for service uptime because we believe that you should be able to depend on Skygear and run your business worry-free.</p>

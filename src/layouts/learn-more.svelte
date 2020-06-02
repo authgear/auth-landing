@@ -1,16 +1,18 @@
-<script>
-  export let currPath = "";
-
-  const linksReverseMap = {
-    terms: "Authgear Terms of Services",
-    "license-terms": "Authgear License Subscription Terms and Conditions",
+<script context="module">
+  export const linksMap = {
+    terms: "Terms of Services",
     promise: "Our Promises",
     policy: "Acceptable Use Policy",
     "data-privacy": "Data Privacy Policy",
     sla: "Service Level Agreement",
     security: "Security",
   };
-  const currTitle = linksReverseMap[currPath];
+</script>
+
+<script>
+  export let slug = "";
+
+  const currTitle = linksMap[slug];
 </script>
 
 <style>
@@ -102,13 +104,13 @@
 <div class="learn-more">
   <h1 class="learn-more__title">Learn More</h1>
   <ul class="learn-more__toc">
-    {#each Object.keys(linksReverseMap) as link}
+    {#each Object.keys(linksMap) as link}
       <li class="learn-more__toc-item">
         <a
-          class:learn-more__toc-link--active={link === currPath}
+          class:learn-more__toc-link--active={link === slug}
           class="learn-more__toc-link"
           href={link}>
-          {linksReverseMap[link]}
+          {linksMap[link]}
         </a>
       </li>
     {/each}

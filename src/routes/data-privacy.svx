@@ -1,6 +1,6 @@
 ---
 layout: learn-more
-currPath: data-privacy
+slug: data-privacy
 ---
 
 <h5>Who we are</h5>

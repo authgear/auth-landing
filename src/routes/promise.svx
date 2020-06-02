@@ -1,6 +1,6 @@
 ---
 layout: learn-more
-currPath: promise
+slug: promise
 ---
 
 <ul>
