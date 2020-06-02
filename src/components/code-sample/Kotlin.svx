@@ -1,5 +1,9 @@
 ---
 layout: code-sample
+content: >
+  fun kotlin() {
+    println('Kotlin!!!')
+  }
 ---
 
 ```kotlin

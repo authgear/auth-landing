@@ -1,5 +1,9 @@
 ---
 layout: code-sample
+content: >
+  function() {
+    console.log('I do not know how to code!!')
+  }
 ---
 
 ```javascript

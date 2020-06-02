@@ -2,7 +2,6 @@
   export let codeTabs = [];
 
   let currTab = codeTabs[0];
-  $: currLanguage = currTab.language.toLowerCase();
   let showTooltip = false;
 
   function handleTabClick(idx) {
