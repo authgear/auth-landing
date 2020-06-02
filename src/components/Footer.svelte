@@ -93,7 +93,7 @@
           </li>
           {#each learnMorePages as page}
             <li>
-              <a href={page.slug}>{page.title}</a>
+              <a target="_blank" href={page.slug}>{page.title}</a>
             </li>
           {/each}
         </ul>
