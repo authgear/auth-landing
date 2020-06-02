@@ -82,7 +82,7 @@
   }
 
   .editor__header__tabs-wrapper {
-    padding: 20px 25px 15px 25px;
+    padding: 20px 25px 5px 25px;
     background-color: #fff;
   }
 
@@ -91,13 +91,19 @@
     font-size: 13px;
     font-weight: 900;
     padding: 5px 4px;
+    margin-bottom: 10px;
     margin-right: 35px;
     cursor: pointer;
     background-color: #fff;
   }
 
+  .editor__header__tab:last-child {
+    margin-right: 0;
+  }
+
   .editor__header__tab--active {
     border-bottom: 3px solid hsl(216, 93.4%, 52.7%);
+    margin-bottom: 7px;
   }
 
   .editor__header__copybtn-wrapper {
@@ -119,9 +125,9 @@
     font-size: 14px;
     font-weight: 700;
     position: absolute;
-    top: 48px;
-    z-index: 1;
-    right: 12px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
     background: #717171;
     padding: 12px 18px;
