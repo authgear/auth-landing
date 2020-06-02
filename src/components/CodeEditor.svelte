@@ -103,6 +103,7 @@
 
   .editor__header__tab--active {
     border-bottom: 3px solid hsl(216, 93.4%, 52.7%);
+    margin-bottom: 7px;
   }
 
   .editor__header__copybtn-wrapper {
