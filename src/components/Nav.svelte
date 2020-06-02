@@ -6,6 +6,12 @@
     { name: "Pricing", href: "pricing" },
     { name: "Open Sources", href: "." },
   ];
+
+  let showMobileMenu = false;
+
+  function toggleMobileMenu() {
+    showMobileMenu = !showMobileMenu;
+  }
 </script>
 
 <style>
@@ -79,16 +85,10 @@
   }
 
   .nav__mobile-toggle {
+    padding: 5px;
+    background-color: inherit;
     display: none;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-
     cursor: pointer;
-
-    opacity: 0;
     z-index: 2;
   }
 
@@ -101,7 +101,7 @@
     background: hsl(0, 0%, 66.7%);
     border-radius: 3px;
     z-index: 1;
-    transform-origin: 4px 0px;
+    transform-origin: 6px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
@@ -114,23 +114,31 @@
     transform-origin: 0% 100%;
   }
 
-  .nav__mobile-toggle:checked ~ .nav__mobile-toggle-line {
+  .nav__mobile-toggle-line--active {
     opacity: 1;
-    transform: rotate(45deg) translate(-1px, 0px);
+    transform: rotate(45deg) translate(-6px, -7px);
     background: hsl(0, 0%, 66.7%);
   }
 
-  .nav__mobile-toggle:checked ~ .nav__mobile-toggle-line:nth-last-child(3) {
+  .nav__mobile-toggle-line--active:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  .nav__mobile-toggle:checked ~ .nav__mobile-toggle-line:nth-last-child(2) {
-    transform: rotate(-45deg) translate(1px, -1px);
+  .nav__mobile-toggle-line--active:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 2px);
   }
 
-  .nav__mobile-toggle:checked ~ .nav__links-list {
-    transform: none;
+  .nav__mobile-overlay {
+    display: none;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(16, 22, 26, 0.7);
+    overflow: auto;
+    user-select: none;
   }
 
   @media screen and (min-width: 992px) {
@@ -194,13 +202,13 @@
 
     .nav__mobile-menu {
       position: fixed;
-      top: 20px;
-      left: 8px;
+      top: 15px;
+      left: 3px;
       z-index: 2;
     }
 
     .nav__mobile-toggle {
-      display: block;
+      display: inline-block;
     }
 
     .nav__mobile-toggle-line {
@@ -227,10 +235,19 @@
       flex-wrap: nowrap;
     }
 
+    .nav__links-list--active {
+      transform: none;
+    }
+
     .nav__link-item {
       padding: 10px 0;
       font-size: 16px;
       width: 100%;
+    }
+
+    .nav__mobile-overlay--active {
+      display: block;
+      z-index: 1;
     }
   }
 </style>
@@ -249,11 +266,20 @@
       <div class="col-6 col-sm-6 col-md-9">
         <nav class="nav__links-wrapper">
           <div class="nav__mobile-menu">
-            <input class="nav__mobile-toggle" type="checkbox" />
-            <span class="nav__mobile-toggle-line" />
-            <span class="nav__mobile-toggle-line" />
-            <span class="nav__mobile-toggle-line" />
-            <ul class="nav__links-list">
+            <button class="nav__mobile-toggle" on:click={toggleMobileMenu}>
+              <span
+                class="nav__mobile-toggle-line"
+                class:nav__mobile-toggle-line--active={showMobileMenu} />
+              <span
+                class="nav__mobile-toggle-line"
+                class:nav__mobile-toggle-line--active={showMobileMenu} />
+              <span
+                class="nav__mobile-toggle-line"
+                class:nav__mobile-toggle-line--active={showMobileMenu} />
+            </button>
+            <ul
+              class="nav__links-list"
+              class:nav__links-list--active={showMobileMenu}>
               {#each navLinks as navLink}
                 <li class="nav__link-item">
                   <a class="nav__link" href={navLink.href}>{navLink.name}</a>
@@ -261,6 +287,10 @@
               {/each}
             </ul>
           </div>
+          <div
+            class="nav__mobile-overlay"
+            class:nav__mobile-overlay--active={showMobileMenu}
+            on:click={toggleMobileMenu} />
           <a
             href="https://oursky.us2.list-manage.com/subscribe/post?u=34db69ee3e01fe49e12302054&amp;id=78e15b4a2a"
             class="nav__action-btn">
