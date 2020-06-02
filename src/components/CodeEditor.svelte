@@ -48,12 +48,6 @@
     justify-content: space-between;
   }
 
-  .editor__code-wrapper {
-    height: 100%;
-    margin: 0;
-    border-radius: 0;
-  }
-
   .editor__header__tabs-wrapper {
     padding: 20px 25px 5px 25px;
     background-color: #fff;
@@ -155,9 +149,4 @@
     </div>
   </div>
   <svelte:component this={currTab.component} />
-  <!-- <pre class="editor__code-wrapper language-{currLanguage}">
-    <code class="language-{currLanguage}">
-      {@html codeHtmlOutput}
-    </code>
-  </pre> -->
 </div>
