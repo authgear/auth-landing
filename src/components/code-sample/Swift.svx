@@ -1,0 +1,13 @@
+---
+layout: code-sample
+content: >
+  func swift() {
+    print("Swift!!")
+  }
+---
+
+```swift
+func swift() {
+  print("Swift!!")
+}
+```

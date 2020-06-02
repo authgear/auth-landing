@@ -22,6 +22,7 @@ const preprocess = [
     extension: ".svx",
     layout: {
       "learn-more": join(__dirname, "./src/layouts/learn-more.svelte"),
+      "code-sample": join(__dirname, "./src/layouts/code-sample.svelte"),
     },
   }),
   sveltePreprocess({

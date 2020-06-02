@@ -1,36 +1,8 @@
 <script>
-  // import Prism from "prismjs";
-  // import "prismjs/components/prism-kotlin";
-  // import "prismjs/components/prism-swift";
-  // TODO: Fix browser issues with importing PrismJS on IE11/Edge
-
   export let codeTabs = [];
 
   let currTab = codeTabs[0];
-  $: currLanguage = currTab.language.toLowerCase();
   let showTooltip = false;
-
-  function renderCode(language, content) {
-    // let langDef;
-    // switch (language) {
-    //   case "javascript":
-    //     langDef = Prism.languages.javascript;
-    //     break;
-    //   case "kotlin":
-    //     langDef = Prism.languages.kotlin;
-    //     break;
-    //   case "swift":
-    //     langDef = Prism.languages.swift;
-    //     break;
-    //   default:
-    //     langDef = Prism.languages.javascript;
-    //     break;
-    // }
-    // return Prism.highlight(content, langDef, language);
-    return content;
-  }
-
-  $: codeHtmlOutput = renderCode(currLanguage, currTab.content);
 
   function handleTabClick(idx) {
     return function cb() {
@@ -73,12 +45,6 @@
   .editor__header {
     display: flex;
     justify-content: space-between;
-  }
-
-  .editor__code-wrapper {
-    height: 100%;
-    margin: 0;
-    border-radius: 0;
   }
 
   .editor__header__tabs-wrapper {
@@ -181,9 +147,5 @@
       </div>
     </div>
   </div>
-  <pre class="editor__code-wrapper language-{currLanguage}">
-    <code class="language-{currLanguage}">
-      {@html codeHtmlOutput}
-    </code>
-  </pre>
+  <svelte:component this={currTab.component} />
 </div>
