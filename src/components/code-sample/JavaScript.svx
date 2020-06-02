@@ -1,0 +1,9 @@
+---
+layout: none
+---
+
+```javascript
+function() {
+  console.log('I do not know how to code!!')
+}
+```

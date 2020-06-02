@@ -1,19 +1,22 @@
 <script>
   import CodeEditor from "./CodeEditor.svelte";
+  import JavaScriptCode from "./code-sample/JavaScript.svx";
+  import KotlinCode from "./code-sample/Kotlin.svx";
+  import SwiftCode from "./code-sample/Swift.svx";
 
   // TODO: Replace placeholder code with actual sample code
   const codeTabs = [
     {
       language: "JavaScript",
-      content: "function() {\n\tconsole.log('I do not know how to code!!')\n}",
+      component: JavaScriptCode,
     },
     {
       language: "Kotlin",
-      content: "function() { // this is some sample Kotlin code }",
+      component: KotlinCode,
     },
     {
       language: "Swift",
-      content: "function() { // this is some sample Swift code }",
+      component: SwiftCode,
     },
   ];
 </script>

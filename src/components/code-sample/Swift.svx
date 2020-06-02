@@ -1,0 +1,9 @@
+---
+layout: none
+---
+
+```swift
+func swift() {
+  print("Swift!!")
+}
+```

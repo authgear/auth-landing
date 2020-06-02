@@ -1,0 +1,9 @@
+---
+layout: none
+---
+
+```kotlin
+fun kotlin() {
+  println('Kotlin!!!')
+}
+```
