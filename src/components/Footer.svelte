@@ -85,13 +85,7 @@
             <a href=".">Blog</a>
           </li>
           <li>
-            <a href=".">Demo Projects</a>
-          </li>
-          <li>
             <a href=".">Documentation</a>
-          </li>
-          <li>
-            <a href=".">Tutorials</a>
           </li>
           <li>
             <a href=".">Terms of Services</a>
