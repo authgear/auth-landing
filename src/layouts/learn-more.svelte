@@ -101,6 +101,9 @@
   }
 </style>
 
+<svelte:head>
+  <title>{currTitle} - Authgear</title>
+</svelte:head>
 <div class="learn-more">
   <h1 class="learn-more__title">Learn More</h1>
   <ul class="learn-more__toc">
