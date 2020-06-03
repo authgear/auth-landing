@@ -89,11 +89,11 @@
             <a href=".">Blog</a>
           </li>
           <li>
-            <a href=".">Documentation</a>
+            <a target="_blank" href="https://docs.skygear.io/">Documentation</a>
           </li>
           {#each learnMorePages as page}
             <li>
-              <a href={page.slug}>{page.title}</a>
+              <a target="_blank" href={page.slug}>{page.title}</a>
             </li>
           {/each}
         </ul>
@@ -102,13 +102,15 @@
         <span class="sitemap-title">Company</span>
         <ul class="sitemap-list">
           <li>
-            <a href=".">Team</a>
+            <a target="_blank" href="https://github.com/orgs/authgear/people">
+              Team
+            </a>
           </li>
           <li>
-            <a href=".">Contact</a>
+            <a href="mailto:hello@skygear.io">Contact</a>
           </li>
           <li>
-            <a href=".">Jobs</a>
+            <a target="_blank" href="https://jobs.oursky.com/">Jobs</a>
           </li>
         </ul>
       </div>
@@ -116,16 +118,18 @@
         <span class="sitemap-title">Connect</span>
         <ul class="sitemap-list">
           <li>
-            <a href=".">Twitter</a>
+            <a target="_blank" href="https://twitter.com/authgear">Twitter</a>
           </li>
           <li>
-            <a href=".">Facebook</a>
+            <a target="_blank" href="https://www.facebook.com/oursky.hk">
+              Facebook
+            </a>
           </li>
           <li>
-            <a href=".">Github</a>
+            <a target="_blank" href="https://github.com/authgear">Github</a>
           </li>
           <li>
-            <a href=".">Discourse</a>
+            <a target="_blank" href="https://discuss.skygear.io/">Discourse</a>
           </li>
         </ul>
       </div>
