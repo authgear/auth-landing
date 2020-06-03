@@ -15,6 +15,8 @@ ci-test:
 
 .PHONY: ci-deploy-prod
 ci-deploy-prod:
+	@echo "Install dependencies"
+	npm ci
 	@echo "Generate production build"
 	npm run export -- --basepath=$(BASE_PATH)
 	@if ! [ -x "$$(command -v aws)" ]; then\
