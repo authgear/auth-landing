@@ -89,11 +89,15 @@
             <a href=".">Blog</a>
           </li>
           <li>
-            <a target="_blank" href="https://docs.skygear.io/">Documentation</a>
+            <a rel="noopener" target="_blank" href="https://docs.skygear.io/">
+              Documentation
+            </a>
           </li>
           {#each learnMorePages as page}
             <li>
-              <a target="_blank" href={page.slug}>{page.title}</a>
+              <a rel="noopener" target="_blank" href={page.slug}>
+                {page.title}
+              </a>
             </li>
           {/each}
         </ul>
@@ -102,7 +106,10 @@
         <span class="sitemap-title">Company</span>
         <ul class="sitemap-list">
           <li>
-            <a target="_blank" href="https://github.com/orgs/authgear/people">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/orgs/authgear/people">
               Team
             </a>
           </li>
@@ -110,7 +117,9 @@
             <a href="mailto:hello@skygear.io">Contact</a>
           </li>
           <li>
-            <a target="_blank" href="https://jobs.oursky.com/">Jobs</a>
+            <a rel="noopener" target="_blank" href="https://jobs.oursky.com/">
+              Jobs
+            </a>
           </li>
         </ul>
       </div>
@@ -118,18 +127,36 @@
         <span class="sitemap-title">Connect</span>
         <ul class="sitemap-list">
           <li>
-            <a target="_blank" href="https://twitter.com/authgear">Twitter</a>
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://twitter.com/authgear">
+              Twitter
+            </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.facebook.com/oursky.hk">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://www.facebook.com/oursky.hk">
               Facebook
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/authgear">Github</a>
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/authgear">
+              Github
+            </a>
           </li>
           <li>
-            <a target="_blank" href="https://discuss.skygear.io/">Discourse</a>
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://discuss.skygear.io/">
+              Discourse
+            </a>
           </li>
         </ul>
       </div>

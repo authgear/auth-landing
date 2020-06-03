@@ -90,6 +90,7 @@
           {#each links as link}
             <li class="resources__links-list__item">
               <a
+                rel="noopener"
                 target="_blank"
                 class="resources__links-list__link"
                 href={link.href}>

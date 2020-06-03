@@ -57,6 +57,7 @@
   method="post"
   name="mc-embedded-subscribe-form"
   class="contact-wrapper"
+  rel="noopener"
   target="_blank"
   novalidate>
   <input
