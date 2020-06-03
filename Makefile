@@ -1,6 +1,6 @@
 .POSIX:
-SHELL = /bin/sh
-BASE_PATH = "/"
+SHELL=/bin/sh
+BASE_PATH="/"
 
 .PHONY: ci-test
 ci-test: 
