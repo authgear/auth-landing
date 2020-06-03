@@ -11,14 +11,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: Install dependencies
-        run: npm ci
-      - name: Format code
-        run: npm run check-format
-      - name: Lint svelte files
-        run: npm run lint
-      - name: Generate production build
-        run: npm run export
+      - name: CI test
+        run: make ci-test
   deploy-master:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: test
@@ -46,3 +40,22 @@ jobs:
           BRANCH: gh-pages
           FOLDER: __sapper__/export${{ env.BASE_PATH }}
           CLEAN: true
+  deploy-prod:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/production'
+    needs: test
+    env:
+      BASE_PATH: /
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+      CDN_DISTRIBUTION_ID: ${{ secrets.CDN_DISTRIBUTION_ID }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: CI deploy-prod
+        run: make ci-deploy-prod
