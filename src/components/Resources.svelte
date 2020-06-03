@@ -1,8 +1,7 @@
 <script>
   const links = [
-    { name: "Documentations", href: "" },
-    { name: "Github", href: "" },
-    { name: "Tutorials", href: "" },
+    { name: "Documentations", href: "https://docs.skygear.io" },
+    { name: "Github", href: "https://github.com/authgear" },
   ];
 </script>
 
@@ -33,6 +32,7 @@
 
   .resources__links-list__link {
     font-size: 16px;
+    color: #fff;
   }
 
   @media screen and (min-width: 768px) {
@@ -89,7 +89,10 @@
         <ul class="resources__links-list">
           {#each links as link}
             <li class="resources__links-list__item">
-              <a class="resources__links-list__link" href={link.href}>
+              <a
+                target="_blank"
+                class="resources__links-list__link"
+                href={link.href}>
                 {link.name}
               </a>
             </li>
