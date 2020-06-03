@@ -110,7 +110,7 @@
   }
 </style>
 
-<section class="features-section">
+<section id="features-section" class="features-section">
   <div class="container-fluid">
     <div class="row">
       {#each features as feature}

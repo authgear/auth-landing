@@ -1,6 +1,6 @@
 <script>
   const navLinks = [
-    { name: "Features", href: "." },
+    { name: "Features", href: "#features-section" },
     { name: "Comparison", href: "." },
     { name: "Documentation", href: "https://docs.skygear.io" },
     { name: "Pricing", href: "pricing" },
