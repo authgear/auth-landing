@@ -2,9 +2,13 @@
   const navLinks = [
     { name: "Features", href: "#features-section" },
     { name: "Comparison", href: "." },
-    { name: "Documentation", href: "https://docs.skygear.io" },
+    { name: "Documentation", href: "https://docs.skygear.io", external: true },
     { name: "Pricing", href: "pricing" },
-    { name: "Open Sources", href: "https://github.com/authgear" },
+    {
+      name: "Open Sources",
+      href: "https://github.com/authgear",
+      external: true,
+    },
   ];
 
   let showMobileMenu = false;
@@ -285,7 +289,9 @@
                   <a
                     class="nav__link"
                     href={navLink.href}
-                    on:click={showMobileMenu && toggleMobileMenu}>
+                    on:click={showMobileMenu && toggleMobileMenu}
+                    target={navLink.external ? '_blank' : null}
+                    rel={navLink.external ? 'noopener' : null}>
                     {navLink.name}
                   </a>
                 </li>
@@ -297,6 +303,8 @@
             class:nav__mobile-overlay--active={showMobileMenu}
             on:click={toggleMobileMenu} />
           <a
+            target="_blank"
+            rel="noopener"
             href="https://oursky.us2.list-manage.com/subscribe/post?u=34db69ee3e01fe49e12302054&amp;id=78e15b4a2a"
             class="nav__action-btn">
             Talk to Us
