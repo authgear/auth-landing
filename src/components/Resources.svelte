@@ -1,6 +1,6 @@
 <script>
   const links = [
-    { name: "Documentations", href: "https://docs.skygear.io" },
+    { name: "Documentation", href: "https://docs.skygear.io" },
     { name: "Github", href: "https://github.com/authgear" },
   ];
 </script>
