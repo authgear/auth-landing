@@ -282,7 +282,12 @@
               class:nav__links-list--active={showMobileMenu}>
               {#each navLinks as navLink}
                 <li class="nav__link-item">
-                  <a class="nav__link" href={navLink.href}>{navLink.name}</a>
+                  <a
+                    class="nav__link"
+                    href={navLink.href}
+                    on:click={showMobileMenu && toggleMobileMenu}>
+                    {navLink.name}
+                  </a>
                 </li>
               {/each}
             </ul>
