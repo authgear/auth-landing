@@ -150,14 +150,6 @@
               Github
             </a>
           </li>
-          <li>
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://discuss.skygear.io/">
-              Discourse
-            </a>
-          </li>
         </ul>
       </div>
     </div>
