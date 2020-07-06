@@ -114,7 +114,7 @@
             </a>
           </li>
           <li>
-            <a href="mailto:hello@skygear.io">Contact</a>
+            <a href="mailto:hello@authgear.com">Contact</a>
           </li>
           <li>
             <a rel="noopener" target="_blank" href="https://jobs.oursky.com/">
@@ -163,8 +163,8 @@
     </div>
     <div class="row copyright-wrapper">
       <div class="col-12 col-md-6">
-        <a class="footer__email-link" href="mailto:hello@skygear.io">
-          hello@skygear.io
+        <a class="footer__email-link" href="mailto:hello@authgear.com">
+          hello@authgear.com
         </a>
       </div>
       <div class="col-12 col-md-6 copyright">

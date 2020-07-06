@@ -88,7 +88,7 @@
           description="Run Authgear for your mission-critical applications"
           features={['Managed SaaS or Private Cloud Deployment', 'Enterprise Grade SLA support', 'Professional Support and Services', 'Anomaly Detection', 'Audited Reports']}>
           <div slot="footer">
-            <Button fluid large href="mailto:hello@skygear.io">
+            <Button fluid large href="mailto:hello@authgear.com">
               Pricing: Contact Us
             </Button>
           </div>
