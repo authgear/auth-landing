@@ -89,7 +89,7 @@
             <a href=".">Blog</a>
           </li>
           <li>
-            <a rel="noopener" target="_blank" href="https://docs.skygear.io/">
+            <a rel="noopener" target="_blank" href="https://docs.authgear.com/">
               Documentation
             </a>
           </li>

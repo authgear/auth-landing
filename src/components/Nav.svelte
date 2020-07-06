@@ -2,7 +2,11 @@
   const navLinks = [
     { name: "Features", href: "#features-section" },
     { name: "Comparison", href: "." },
-    { name: "Documentation", href: "https://docs.skygear.io", external: true },
+    {
+      name: "Documentation",
+      href: "https://docs.authgear.com",
+      external: true,
+    },
     { name: "Pricing", href: "pricing" },
     {
       name: "Open Sources",
