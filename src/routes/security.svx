@@ -9,7 +9,7 @@ We employ the following security controls at layer from physical to application 
 
 ###### Data Centers
 
-Skygear’s physical infrastructure is hosted and managed within Amazon’s secure data centers and utilize the Amazon Web Service (AWS) technology. Amazon continually manages risk and undergoes recurring assessments to ensure compliance with industry standards. Amazon’s data center operations have been accredited under:
+Authgear’s physical infrastructure is hosted and managed within Amazon’s secure data centers and utilize the Amazon Web Service (AWS) technology. Amazon continually manages risk and undergoes recurring assessments to ensure compliance with industry standards. Amazon’s data center operations have been accredited under:
 
 - ISO 27001
 - SOC 1/SSAE 16/ISAE 3402 (Previously SAS 70 Type II)
@@ -20,9 +20,16 @@ Skygear’s physical infrastructure is hosted and managed within Amazon’s secu
 
 We use payment processor Stripe for encrypting and processing credit card payments. Stripe is PCI Level 1 compliant.
 
-###### Physical Security
+##### PCI DSS Compliance
 
-Skygear utilizes ISO 27001 and FISMA certified data centers managed by Amazon. Amazon has many years of experience in designing, constructing, and operating large-scale data centers. This experience has been applied to the AWS platform and infrastructure. AWS data centers are housed in nondescript facilities, and critical facilities have extensive setback and military grade perimeter control berms as well as other natural boundary protection. Physical access is strictly controlled both at the perimeter and at building ingress points by professional security staff utilizing video surveillance, state of the art intrusion detection systems, and other electronic means. Authorized staff must pass two-factor authentication no fewer than three times to access data center floors. All visitors and contractors are required to present identification and are signed in and continually escorted by authorized staff.
+The Payment Card Industry Data Security Standard (PCI DSS) is a set of industry-mandated requirements that apply to any business that handles, processes, or stores credit cards, regardless of the business’s size or location.
+
+Authgear is not in the business of storing or processing payments and Authgear does NOT store any secure financial data by default.
+
+
+##### Physical Security
+
+Authgear utilizes ISO 27001 and FISMA certified data centers managed by Amazon. Amazon has many years of experience in designing, constructing, and operating large-scale data centers. This experience has been applied to the AWS platform and infrastructure. AWS data centers are housed in nondescript facilities, and critical facilities have extensive setback and military grade perimeter control berms as well as other natural boundary protection. Physical access is strictly controlled both at the perimeter and at building ingress points by professional security staff utilizing video surveillance, state of the art intrusion detection systems, and other electronic means. Authorized staff must pass two-factor authentication no fewer than three times to access data center floors. All visitors and contractors are required to present identification and are signed in and continually escorted by authorized staff.
 
 Amazon only provides data center access and information to employees who have a legitimate business need for such privileges. When an employee no longer has a business need for these privileges, his or her access is immediately revoked, even if they continue to be an employee of Amazon or Amazon Web Services. All physical and electronic access to data centers by Amazon employees is logged and audited routinely.
 
@@ -52,7 +59,7 @@ Firewalls are utilized to restrict access to systems from external networks and 
 
 ###### Spoofing and Sniffing Protections
 
-Managed firewalls prevent IP, MAC, and ARP spoofing on the network and between virtual hosts to ensure spoofing is not possible. Packet sniffing is prevented by infrastructure including the hypervisor which will not deliver traffic to an interface which it is not addressed to. Skygear utilizes application isolation, operating system restrictions, and encrypted connections to further ensure risk is mitigated at all levels.
+Managed firewalls prevent IP, MAC, and ARP spoofing on the network and between virtual hosts to ensure spoofing is not possible. Packet sniffing is prevented by infrastructure including the hypervisor which will not deliver traffic to an interface which it is not addressed to. Authgear utilizes application isolation, operating system restrictions, and encrypted connections to further ensure risk is mitigated at all levels.
 
 ###### Port Scanning
 
@@ -70,14 +77,14 @@ System configuration and consistency is maintained through standard, up-to-date 
 
 ###### System Authentication
 
-Operating system access is limited to Skygear staff and requires username and key authentication. Operating systems do not allow password authentication to prevent password brute force attacks, theft, and sharing.
+Operating system access is limited to Authgear staff and requires username and key authentication. Operating systems do not allow password authentication to prevent password brute force attacks, theft, and sharing.
 
 ##### Disaster Recovery
 
-###### Skygear.io
+###### Authgear.io
 
-Skygear.io is designed for stability, scaling, and inherently mitigates common issues that lead to outages while maintaining recovery capabilities. Our platform maintains redundancy to prevent single points of failure, and is able to replace failed components..
+Authgear.io is designed for stability, scaling, and inherently mitigates common issues that lead to outages while maintaining recovery capabilities. Our platform maintains redundancy to prevent single points of failure, and is able to replace failed components..
 
 ##### Access to Customer Data
 
-Skygear staff does not access or interact with customer data or applications as part of normal operations. There may be cases where Skygear is requested to interact with customer data or applications at the request of the customer for support purposes or where required by law. Skygear may also inspect customer data to debug and troubleshoot platform issues.
+Authgear staff does not access or interact with customer data or applications as part of normal operations. There may be cases where Authgear is requested to interact with customer data or applications at the request of the customer for support purposes or where required by law. Authgear may also inspect customer data to debug and troubleshoot platform issues.
